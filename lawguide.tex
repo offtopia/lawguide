@@ -16,9 +16,12 @@
 \makeatother
 \begin{document}
 
+
 \section{\#offtopia law guide}
 
-This document is merely a summary of the most important laws helpful for everyday activity.
+This document is merely a summary of the most important laws helpful for everyday
+activity.
+
 
 \subsection{Terminology}
 
@@ -39,7 +42,8 @@ Examples:
 \end{quote}
 
 \item \texttt{filibuster}: Anything that is sent on the channel, and can stop a
-law from being passed, is known as a filibuster. This is line in with the literal meaning, ``obstructs progress in a legislative assembly''.
+law from being passed, is known as a filibuster. This is line in with the literal meaning,
+``obstructs progress in a legislative assembly''.
 
 \item \texttt{proposal}: Anything that can filibuster can be a proposal.
 
@@ -55,40 +59,69 @@ currently `nortti'.
 \item \texttt{triminority}: The three required to pass a law. Can be used to refer to
 an actual group, or a hypothetical group.
 
-\item \texttt{triumvirate}: People who are more active with channel work, and have additional rights with ChanServ. Currently consists of `FireFly', `heddwch', `meowrobot', `nortti', `puckipedia', `shikhin', `sortie', `vehk', and `ybden'.
+\item \texttt{triumvirate}: People who are more active with channel work, and have
+additional rights with ChanServ. Currently consists of `FireFly', `heddwch', `meowrobot',
+`nortti', `puckipedia', `shikhin', `sortie', `vehk', and `ybden'.
 
 \item \texttt{vote}: Anything described under `Voting.Syntaxen'.
 \end{itemize}
 
+
+\subsection{Behaving}
+
+\begin{itemize}
+\item \url{https://gitlab.com/sortie/mmmm/blob/master/mmmm.txt} (MMMM).
+A collection of rules and guidelines that evolved from horrors that won't be mentioned
+here; currently in helpful form. By new ancient law, MMMM is lawful.
+
+\item Calling women subhuman; making racist, homophobic, or transphobic
+comments; calling people with disabilities leeches and subhuman;
+telling people with mental illnesses to kill themselves; or other comparable acts
+are to be prohibited by punishment of ban, except in cases of clear sarcasm.
+
+\item Mark NSFW content. Linked NSFW content should be marked, preferably with
+\texttt{NSFW} or \texttt{[NSFW]}.
+
+\item Avoid funkicking.
+`Funkicking' is where you kick someone just for fun, or for some insignificant reason.
+Exception to this is if the person you're `funkicking' does not mind the fun kick.
+
+\item Do not kick idlers, unless for abuse or clear violations of channel law.
+
+Idlers are defined as people whose last activity has been 5 minutes ago (where activity
+implies messages or nick changes as a response to something in the channel), or who
+have marked themselves away (e.g. by \texttt{bbl}).
+\end{itemize}
+
+
 \subsection{Voting}
+
 
 \subsubsection{Basics}
 
 At every moment, there is an active proposal and a vote count.
 
-If a vote that doesn't
-refer to the current active proposal is cast, the active proposal changes to the new
-proposal, and the vote count resets to 0. A filibuster sets the active proposal to itself and resets the vote count to 0.
+If a vote that doesn't refer to the current active proposal is cast, the active proposal
+changes to the new proposal, and the vote count resets to 0. A filibuster sets the active
+proposal to itself and resets the vote count to 0.
 
 A vote increments the vote count by 1 after change of proposal (if required).
 
-When
-the vote count reaches 3, the active proposal becomes a law.
+When the vote count reaches 3, the active proposal becomes a law.
+
 
 \subsubsection{Syntaxen}
 There are several different kinds of syntaxes for voting on laws. They're all based
 on the original syntax of \texttt{:D}, with various modifications.
 
 \begin{itemize}
-
 \item \texttt{:D}
 
 The most basic form. Votes for the current active proposal.
 
 \item \texttt{:D\~{}N}
 
-Votes N proposals back. Is 0-indexed, so \texttt{:D\~{}0} is
-equivalent to \texttt{:D}.
+Votes N proposals back. Is 0-indexed, so \texttt{:D\~{}0} is equivalent to \texttt{:D}.
 
 \item \texttt{:D\^{} :D\^{}\^{} :D\^{}\^{}\^{} ...}
 
@@ -96,75 +129,63 @@ Equivalent to \texttt{:D\~{}N}, where N is the number of `\^{}'s.
 
 \item \texttt{:D\~{}mathematical expression}
 
-If the mathematical expression, or its
-modulus, is a non-negative integer, say N, then it is equivalent to \texttt{:D\~{}N}.
-Otherwise, it is an invalid vote.
+If the mathematical expression, or its modulus, is a non-negative integer, say N, then
+it is equivalent to \texttt{:D\~{}N}. Otherwise, it is an invalid vote.
 
 \item \texttt{:D\~{}kick}
 
-Refers to last kick. Can only be used right after a kick, or
-a kick followed by a join by the kicked person.
+Refers to last kick. Can only be used right after a kick, or a kick followed by a join
+by the kicked person.
 
 \item \texttt{nick: :D, nick: :D\~{}N, nick: :D\^{}, nick: :D\~{}mathematical expression}
 
-Same as without the \texttt{nick: } prefix, but instead refer to the relevant proposal made by `nick'. \texttt{nick, } can be used instead of \texttt{nick: }.
-
+Same as without the \texttt{nick: } prefix, but instead refer to the relevant proposal
+made by `nick'. \texttt{nick, } can be used instead of \texttt{nick: }.
 \end{itemize}
+
 
 \subsubsection{What counts as a filibuster/proposal?}
 
 \begin{itemize}
-
-\item Filibustering messages \emph{are} proposals, \emph{unless} they're sent by bots to explain something in the previous message (e.g. title bot, automatic translation) \emph{or} they begin with \texttt{nolog:} or \texttt{[nolog]}.
-\item Bot messages sent as a response to direct command (e.g. program evaluation, non-automatic translation) \emph{are} proposals.
-\item Bot messages that are generally to be ignored in the legislative process (e.g. title bot, automatic translation) \emph{are} proposals \emph{if} intended to disrupt.
+\item Filibustering messages \emph{are} proposals, \emph{unless} they're sent by 
+bots to explain something in the previous message (e.g. title bot, automatic translation) 
+\emph{or} they begin with \texttt{nolog:} or \texttt{[nolog]}.
+\item Bot messages sent as a response to direct command (e.g. program evaluation,
+non-automatic translation) \emph{are} proposals.
+\item Bot messages that are generally to be ignored in the legislative process (e.g. title
+bot, automatic translation) \emph{are} proposals \emph{if} intended to disrupt.
 \item Notices are treated like messages (except they can't be used to vote).
-\item Nick changes \emph{are not} proposals, \emph{unless} they are a direct response to something in channel \emph{or} are disruptive.
+\item Nick changes \emph{are not} proposals, \emph{unless} they are a direct response
+to something in channel \emph{or} are disruptive.
 \item Kicks and mode changes \emph{are} proposals.
-\item Joins \emph{are not} proposals, \emph{unless} it is a first join \emph{or} intended to disrupt.
+\item Joins \emph{are not} proposals, \emph{unless} it is a first join \emph{or} intended
+to disrupt.
 \item Parts and quits \emph{are not} proposals, \emph{unless} intended to disrupt.
-\item Special behaviour: valid votes with \texttt{:D:} or \texttt{D:} substituted for \texttt{:D} can \emph{not} act as proposals. These messages
-still filibuster.
+\item Special behaviour: valid votes with \texttt{:D:} or \texttt{D:} substituted for \texttt{:D}
+can \emph{not} act as proposals. These messages still filibuster.
 \end{itemize}
 
-\subsection{Behaving}
-
-\begin{itemize}
-
-\item \url{https://gitlab.com/sortie/mmmm/blob/master/mmmm.txt} (MMMM).
-A collection of rules and guidelines that evolved from horrors that won't be mentioned here; currently in helpful form. By new ancient law, MMMM is lawful.
-
-\item Calling women subhuman; making racist, homophobic, or transphobic
-comments; calling people with disabilities leeches and subhuman;
-telling people with mental illnesses to kill themselves; or other comparable acts
-are to be prohibited by punishment of ban, except in cases of clear sarcasm.
-
-\item Mark NSFW content. Linked NSFW content should be marked, preferably with \texttt{NSFW} or \texttt{[NSFW]}.
-
-\item Do not kick idlers.
-
-Idlers are defined as people whose last activity has been 5 minutes ago (where activity implies messages or nick changes as a response to something in the channel), or who have marked themselves away (e.g. by \texttt{bbl}).
-
-\item Avoid funkicking.
-`Funkicking' is where you kick someone just for fun, or for some insignificant reason. Exception to this is if the person you're `funkicking' does not mind the fun kick.
-
-\end{itemize}
 
 \subsection{Logs}
 
 \begin{itemize}
-\item There is a public log that logs the last hundred lines of the channel, except those that begin with
+\item There is a public log that logs the last hundred lines of the channel, except those that
 begin with \texttt{nolog:} or \texttt{[nolog]}.
-\item Publishing channel logs otherwise without explicit agreement from the channel is prohibited.
-\item The gopher server serving the public logs is allowed to collect IPs, requested paths, and user
-agents of connecting users; these are not retained for over a month except in cases of abuse.
+\item Publishing channel logs otherwise without explicit agreement from the channel is
+prohibited.
+\item The gopher server serving the public logs is allowed to collect IPs, requested paths,
+and user agents of connecting users; these are not retained for over a month except in cases
+of abuse.
 \end{itemize}
+
 
 \subsection{Additional stuff}
 
 \begin{itemize}
-\item In cases where there is disagreement on whether something passed, the lawrememberer's point of view is used.
-\item The person who opens the vote on a proposal must provide the law to lawrememberer, if requested to do so.
+\item In cases where there is disagreement on whether something passed, the
+lawrememberer's point of view is used.
+\item The person who opens the vote on a proposal must provide the law to lawrememberer,
+if requested to do so.
 \item Zero-width spaces in votes are to be ignored.
 \item It is a good custom to vote on one's own proposal last.
 \end{itemize}
