@@ -1,7 +1,8 @@
 addons:
   apt:
     packages:
-      - texlive-full
+      - texlive-latex-extra
+      - cm-super
 install: true
 script: make && mkdir build && mv lawguide.pdf build/
 deploy:
