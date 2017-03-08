@@ -5,10 +5,11 @@ addons:
       - texlive-latex-extra
       - texlive-fonts-recommended
 install: true
-script: make
+script: make && mkdir build && mv lawguide.pdf build/
 deploy:
   provider: pages
   skip_cleanup: true
   github_token: $GITHUB_TOKEN
+  local_dir: build
   on:
     branch: master
