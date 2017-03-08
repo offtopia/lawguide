@@ -1,8 +1,9 @@
+language: generic
 addons:
   apt:
     packages:
       - texlive-latex-extra
-      - cm-super
+      - lmodern
 install: true
 script: make && mkdir build && mv lawguide.pdf build/
 deploy:
