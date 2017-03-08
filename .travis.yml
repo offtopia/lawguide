@@ -1,10 +1,7 @@
 addons:
   apt:
     packages:
-      - texlive-latex-recommended
-      - texlive-latex-extra
-      - lmodern
-      - texlive-generic-extra
+      - texlive-full
 install: true
 script: make && mkdir build && mv lawguide.pdf build/
 deploy:
