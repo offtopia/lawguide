@@ -4,6 +4,7 @@ addons:
       - texlive-latex-recommended
       - texlive-latex-extra
       - texlive-fonts-recommended
+      - texlive-fonts-extra
 install: true
 script: make && mkdir build && mv lawguide.pdf build/
 deploy:
