@@ -1,0 +1,16 @@
+language: generic
+addons:
+  apt:
+    packages:
+      - texlive-latex-extra
+      - cm-super
+script:
+  - mkdir build
+  - pdflatex -interaction=nonstopmode -halt-on-error -output-directory build lawguide.tex
+deploy:
+  provider: pages
+  skip_cleanup: true
+  github_token: $GITHUB_TOKEN
+  local_dir: build
+  on:
+    branch: master
