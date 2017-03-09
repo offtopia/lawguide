@@ -128,17 +128,12 @@ Votes N proposals back. Is 0-indexed, so \texttt{:D\~{}0} is equivalent to \text
 
 Equivalent to \texttt{:D\~{}N}, where N is the number of `\^{}'s.
 
-\item \texttt{:D\~{}mathematical expression}
-
-If the mathematical expression, or its modulus, is a non-negative integer, say N, then
-it is equivalent to \texttt{:D\~{}N}. Otherwise, it is an invalid vote.
-
 \item \texttt{:D\~{}kick}
 
 Refers to last kick. Can only be used right after a kick, or a kick followed by a join
 by the kicked person.
 
-\item \texttt{nick: :D, nick: :D\~{}N, nick: :D\^{}, nick: :D\~{}mathematical expression}
+\item \texttt{nick: :D, nick: :D\~{}N, nick: :D\^{}}
 
 Same as without the \texttt{nick: } prefix, but instead refer to the relevant proposal
 made by `nick'. \texttt{nick, } can be used instead of \texttt{nick: }.
