@@ -4,6 +4,7 @@ addons:
     packages:
       - texlive-latex-extra
       - cm-super
+      - texlive-fonts-recommended
 script:
   - mkdir build
   - pdflatex -interaction=nonstopmode -halt-on-error -output-directory build lawguide.tex
