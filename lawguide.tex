@@ -116,9 +116,10 @@ made by `nick'. \texttt{nick, } can be used instead of \texttt{nick: }.
 \subsubsection{What counts as a filibuster/proposal?}
 
 \begin{itemize}
-\item Filibustering messages \emph{are} proposals, \emph{unless} they're sent by 
-bots to explain something in the previous message (e.g. title bot, automatic translation) 
-\emph{or} they begin with \texttt{nolog:} or \texttt{[nolog]}.
+\item Messages \emph{are} proposals, \emph{unless} they're sent by bots to explain something in the
+previous message (e.g. title bot, automatic translation) \emph{or} they begin with \texttt{nolog:}
+or \texttt{[nolog]} \emph{or} is like a valid vote but with \texttt{:D:} or \texttt{D:} substituted
+for \texttt{:D}.
 \item Bot messages sent as a response to direct command (e.g. program evaluation,
 non-automatic translation) \emph{are} proposals.
 \item Bot messages that are generally to be ignored in the legislative process (e.g. title
@@ -131,7 +132,8 @@ to something in channel \emph{or} are disruptive.
 to disrupt.
 \item Parts and quits \emph{are not} proposals, \emph{unless} intended to disrupt.
 \item Special behaviour: valid votes with \texttt{:D:} or \texttt{D:} substituted for \texttt{:D}
-can \emph{not} act as proposals. These messages still filibuster.
+\emph{as well as} messages beginning with \texttt{nolog:} or \texttt{[nolog]} can \emph{not} act as
+proposals. These messages still filibuster.
 \end{itemize}
 
 
@@ -139,7 +141,7 @@ can \emph{not} act as proposals. These messages still filibuster.
 
 \begin{itemize}
 \item In cases where there is disagreement on whether something passed, the
-lawrememberer's point of view is used.
+authoritative log's point of view is used.
 \item The person who opens the vote on a proposal must provide the law to lawrememberer,
 if requested to do so.
 \item Zero-width spaces in votes are to be ignored.
@@ -174,8 +176,8 @@ law from being passed, is known as a filibuster. This is in line with the litera
 \item \texttt{new ancient law}: A law that has always been true, 
 but was only recently discovered and legislated.
 
-\item \texttt{lawrememberer}: The person responsible for maintaining the lawlist,
-currently `nortti'.
+\item \texttt{lawrememberer}: The people responsible for maintaining the lawlist,
+currently `nortti', `shikhin`, and `vehk`.
 
 \item \texttt{lawspeaker}: The person who interprets and clarifies the law,
 currently `nortti'.
